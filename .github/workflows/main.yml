@@ -22,9 +22,3 @@ jobs:
       - name: Lint with pre-commit
         run: |
           pre-commit run --all-files --show-diff-on-failure
-
-      # Add these lines to run the hooks you provided.
-      - name: Run additional pre-commit hooks
-        run: |
-          pre-commit run --hook-stage manual --all-files --show-diff-on-failure \
-            trailing-whitespace end-of-file-fixer check-yaml check-added-large-files
